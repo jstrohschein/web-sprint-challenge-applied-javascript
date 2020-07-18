@@ -68,10 +68,21 @@ axios
     .catch(error => {
         //handle error
         console.log("Error:", error)
+        const entryPoint = document.querySelector('cards-container')
+        entryPoint.appendChild(errorMessage())
+
     })
 
 
+const errorMessage = () => {
 
+    const alert = document.createElement('div')
+    alert.style.height = '1000px'
+    alert.style.width = '100%'
+    alert.textContent = 'HTTP Request Was Not Successful :('
+
+    return alert
+}
 
 const cardMaker = data => {
 
@@ -100,6 +111,9 @@ const cardMaker = data => {
     headLine.textContent = data.headline
     img.src = data.authorPhoto
     name.textContent = data.authorName
+
+    //eventlistener
+    card.addEventListener('click', () => console.log(headLine.textContent))
 
     return card
 }

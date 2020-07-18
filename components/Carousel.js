@@ -22,3 +22,63 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+const carouselMaker = () => {
+
+  //elements
+  const carousel = document.createElement('div')
+  const leftButton = document.createElement('div')
+  const img1 = document.createElement('img')
+  const img2 = document.createElement('img')
+  const img3 = document.createElement('img')
+  const img4 = document.createElement('img')
+  const rightButton = document.createElement('div')
+
+  //HTML structure
+  carousel.appendChild(leftButton)
+  carousel.appendChild(img1)
+  carousel.appendChild(img2)
+  carousel.appendChild(img3)
+  carousel.appendChild(img4)
+  carousel.appendChild(rightButton)
+
+  //classes
+  carousel.classList.add('carousel')
+  leftButton.classList.add('left-button')
+  rightButton.classList.add('right-button')
+
+  //content
+  img1.src = './assets/carousel/mountains.jpeg'
+  img2.src = './assets/carousel/computer.jpeg'
+  img3.src = './assets/carousel/trees.jpeg'
+  img4.src = './assets/carousel/trees.jpeg'
+
+  //starting image
+  img1.style.display = 'initial'
+
+
+
+
+  //listeners
+  leftButton.addEventListener('click', () => {
+    if (img1.style.display === 'initial') {
+      img1.style.display = 'none'
+      img4.style.display = 'initial'
+    }
+    if (img4.style.display === 'initial') {
+      img4.style.display = 'none'
+      img3.style.display = 'initial'
+    }
+
+
+
+
+  })
+
+  return carousel
+
+}
+
+const entryPoint = document.querySelector('.carousel-container')
+const carousel = carouselMaker()
+entryPoint.appendChild(carousel)
