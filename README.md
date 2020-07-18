@@ -28,24 +28,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
-  DOM stands for Document Object Model. It is a tree-like structure consisting of all the HTML elements and their relatives on a web page. However, the elements in the DOM (called nodes) can be targeted and manipulated by the the js attached to the page via the document object.
-
+DOM stands for Document Object Model. It is a tree-like structure consisting of all the HTML elements and their relatives on a web page. However, the elements in the DOM (called nodes) can be targeted and manipulated by the the js attached to the page via the document object.
 
 2. What is an event?
 
- HTML events are “things” that happen to HTML elements on a web page from something either the user or the web page does. Events include clicking, scrolling, and resizing the window. 
+HTML events are “things” that happen to HTML elements on a web page from something either the user or the web page does. Events include clicking, scrolling, and resizing the window.
 
 3. What is an event listener?
 
- When an event occurs, we can program the js to “listen” for these specific events attached to one or more HTML elements and perform some action when it “hears” it. An event listener uses the addEventListener method.
+When an event occurs, we can program the js to “listen” for these specific events attached to one or more HTML elements and perform some action when it “hears” it. An event listener uses the addEventListener method.
 
 4. Why would we convert a NodeList into an Array?
 
- Both a NodeList and an HTML collection are considered to be 'array-like.' An HTML collection cannot be used with an array methods, but a NodeList can use forEach. However, if we want to use other array methods like .map, .filter, and .reduce, the NodeList must be converted to an array.
+Both a NodeList and an HTML collection are considered to be 'array-like.' An HTML collection cannot be used with an array methods, but a NodeList can use forEach. However, if we want to use other array methods like .map, .filter, and .reduce, the NodeList must be converted to an array.
 
 5. What is a component?
 
- Components are custom, reusable, and encapsulated HTML sections built using a function in the js. We can replicate the same div ( or multiple divs) structure over and over and pass different data into it each time. 
+Components are custom, reusable, and encapsulated HTML sections built using a function in the js. We can replicate the same div ( or multiple divs) structure over and over and pass different data into it each time.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -75,9 +74,9 @@ Your finished project must include all of the following requirements:
 
 - [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-- [ ] Following the instructions in the `components/Header.js` file, create the Header.
+- [x] Following the instructions in the `components/Header.js` file, create the Header.
 
-- [ ] Following the instructions in the `components/Tabs.js` file, create the Tabs.
+- [x] Following the instructions in the `components/Tabs.js` file, create the Tabs.
 
 - [ ] Following the instructions in the `components/Cards.js` file, create the Cards.
 
@@ -95,6 +94,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
